@@ -1,0 +1,120 @@
+{
+  "startTime": 1456753190596,
+  "endTime": 1456753190608,
+  "config": {
+    "file": "D:\\aothun\\webpack.config.js"
+  },
+  "buildHash": "e726b178bf547c161c4007916a490092a3c27cf8",
+  "buildOptions": {
+    "config": "D:\\aothun\\webpack.config.js",
+    "watch": true,
+    "context": {
+      "development": false
+    },
+    "hmr": false,
+    "publicPath": "",
+    "aggregateTimeout": 200,
+    "outputPath": "",
+    "staticRoot": "",
+    "staticUrl": "",
+    "cache": true,
+    "cacheDir": "D:\\aothun\\.webpack_build_cache",
+    "hmrRoot": "",
+    "hmrPath": "/__hmr__",
+    "buildHash": "e726b178bf547c161c4007916a490092a3c27cf8",
+    "cacheFile": "D:\\aothun\\.webpack_build_cache\\e726b178bf547c161c4007916a490092a3c27cf8.json",
+    "hmrNamespace": "/e726b178bf547c161c4007916a490092a3c27cf8"
+  },
+  "outputOptions": {
+    "filename": "D:\\aothun\\client\\build\\bundle.js",
+    "libraryTarget": "var",
+    "path": "",
+    "sourceMapFilename": "[file].map[query]",
+    "hotUpdateChunkFilename": "[id].[hash].hot-update.js",
+    "hotUpdateMainFilename": "[hash].hot-update.json",
+    "crossOriginLoading": false,
+    "hashFunction": "md5",
+    "hashDigest": "hex",
+    "hashDigestLength": 20,
+    "sourcePrefix": "\t",
+    "devtoolLineToLine": false
+  },
+  "assets": [
+    "D:\\aothun\\client\\build\\bundle.js"
+  ],
+  "output": {
+    "main": {
+      "js": [
+        "D:\\aothun\\client\\build\\bundle.js"
+      ],
+      "css": [],
+      "files": []
+    }
+  },
+  "urls": {},
+  "stats": {
+    "errors": [],
+    "warnings": [
+      "The 'NewWatchingPlugin' is no longer necessary (now default)"
+    ],
+    "version": "1.12.14",
+    "hash": "76b335717939e0c7a407",
+    "time": 12,
+    "publicPath": "",
+    "assetsByChunkName": {
+      "main": "D:\\aothun\\client\\build\\bundle.js"
+    },
+    "assets": [
+      {
+        "name": "D:\\aothun\\client\\build\\bundle.js",
+        "size": 4613,
+        "chunks": [
+          0
+        ],
+        "chunkNames": [
+          "main"
+        ],
+        "emitted": false
+      }
+    ],
+    "chunks": [
+      {
+        "id": 0,
+        "rendered": false,
+        "initial": true,
+        "entry": true,
+        "extraAsync": false,
+        "size": 3015,
+        "names": [
+          "main"
+        ],
+        "files": [
+          "D:\\aothun\\client\\build\\bundle.js"
+        ],
+        "hash": "a11ae23a0cdd4d7f65f9",
+        "parents": [],
+        "origins": [
+          {
+            "moduleId": 0,
+            "module": "D:\\aothun\\node_modules\\jsx-loader\\index.js?insertPragma=React.DOM&harmony!D:\\aothun\\client\\working\\main.js",
+            "moduleIdentifier": "D:\\aothun\\node_modules\\jsx-loader\\index.js?insertPragma=React.DOM&harmony!D:\\aothun\\client\\working\\main.js",
+            "moduleName": "./client/working/main.js",
+            "loc": "",
+            "name": "main",
+            "reasons": []
+          }
+        ]
+      }
+    ],
+    "children": []
+  },
+  "fileDependencies": [
+    "D:\\aothun\\client\\working\\common\\inputPassword.js",
+    "D:\\aothun\\client\\working\\common\\inputText.js",
+    "D:\\aothun\\client\\working\\main.js"
+  ],
+  "dependencies": {
+    "webpack": "1.12.14",
+    "webpack-build": "1.0.1"
+  }
+}

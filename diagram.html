@@ -1,0 +1,48 @@
+ALL FIELDS REQUIRED, MINUS REL FIELDS
+created_at, updated_at, created_by, updated_by, id, uid, enabled
+
+User
+	email (NULL) (must have)
+	password_hash (NULL) (must have)
+	token_login (NULL)
+	last_login_at (NULL)
+	token_check_status (NULL)
+	status (active, spam, unactive) (unactive)
+	type (facebook, google plus, local) (local)
+User_Info
+	user_id (NULL) (must have)
+	name (NULL)
+	address (NULL)
+	phone (NULL)
+	sex (NULL) (male, female)
+	description (NULL)
+	avatar (NULL)
+	content (NULL)
+Product
+	code (NULL) (must have)
+	name (NULL) (must have)
+	type (t-shirt) (must have)
+	description (NULL)
+	content (NULL)
+Product_Design
+	name (NULL) (must have)
+	product_id (NULL) (must have)
+	description (NULL)
+	content (NULL)
+Image [REL]
+	ref_name (NULL) (table name) (must have)
+	ref_id (NULL) (table id) (must have)
+	type (main, default) (default)
+Canvas [REL]
+	ref_name (NULL) (table name) (must have)
+	ref_id (NULL) (table id) (must have)
+	type (front, back) (front)
+Rel_User_And_Product_Design [REL]
+	user_id (NULL) (must have)
+	product_design_id (NULL) (must have)
+	rating (NULL)
+Rating [REL]
+	ref_name (NULL) (table name) (must have)
+	ref_id (NULL) (table id) (must have)
+	user_id (NULL) (must have)
+	rating (NULL) (1)
