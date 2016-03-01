@@ -1,14 +1,15 @@
 ALL FIELDS REQUIRED, MINUS REL FIELDS
 created_at, updated_at, created_by, updated_by, id, uid, enabled
 
-User
+Users
 	email (NULL) (must have)
-	password_hash (NULL) (must have)
+	password (NULL) (must have)
 	token_login (NULL)
 	last_login_at (NULL)
 	token_check_status (NULL)
 	status (active, spam, unactive) (unactive)
-	type (facebook, google plus, local) (local)
+	login_type (facebook, google plus, local) (local)
+	type (admin, client)
 User_Info
 	user_id (NULL) (must have)
 	name (NULL)

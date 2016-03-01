@@ -1,5 +1,6 @@
 var express = require('express');
 var app = express();
+var models = require('./models');
 
 var compress = require('compression');
 app.use(compress({
@@ -19,31 +20,14 @@ app.use(bodyParser.urlencoded({
 var cors = require('cors');
 app.use(cors());
 
-var knex = require('knex')({
-  	client: 'mysql',
-  	connection: {
-    	host     : '127.0.0.1',
-    	user     : 'root',
-    	password : '',
-    	database : 'meditek'
-  	}
-});
+var router = express.Router();
+require('./routes')(router);
 
-app.post('/eform/create', function(req, res){
-	knex('eform').insert({name: req.body.name})
-	.then(function(data){
-		res.json({data: data})
-	})
-});
+app.use(router);
+app.set('port', 4001);
 
-app.post('/eform/list', function(req, res){
-	knex.select('*')
-	.from('eform')
-	.then(function(data){
-		res.json({data: data})
-	})
+models.sequelize.sync().then(function () {
+  	var server = app.listen(app.get('port'), function() {
+    	console.log('Express server listening on port ' + server.address().port);
+  	});
 });
-
-app.listen(4001, function(){
-	console.log('Listen on 4001');
-})
