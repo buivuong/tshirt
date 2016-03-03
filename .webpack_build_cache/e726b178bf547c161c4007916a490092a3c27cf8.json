@@ -1,6 +1,6 @@
 {
-  "startTime": 1456753190596,
-  "endTime": 1456753190608,
+  "startTime": 1457007204728,
+  "endTime": 1457007205372,
   "config": {
     "file": "D:\\aothun\\webpack.config.js"
   },
@@ -58,8 +58,8 @@
       "The 'NewWatchingPlugin' is no longer necessary (now default)"
     ],
     "version": "1.12.14",
-    "hash": "76b335717939e0c7a407",
-    "time": 12,
+    "hash": "0392b9fd5ffd4f14facf",
+    "time": 644,
     "publicPath": "",
     "assetsByChunkName": {
       "main": "D:\\aothun\\client\\build\\bundle.js"
@@ -67,20 +67,20 @@
     "assets": [
       {
         "name": "D:\\aothun\\client\\build\\bundle.js",
-        "size": 4613,
+        "size": 4595,
         "chunks": [
           0
         ],
         "chunkNames": [
           "main"
         ],
-        "emitted": false
+        "emitted": true
       }
     ],
     "chunks": [
       {
         "id": 0,
-        "rendered": false,
+        "rendered": true,
         "initial": true,
         "entry": true,
         "extraAsync": false,
@@ -91,7 +91,7 @@
         "files": [
           "D:\\aothun\\client\\build\\bundle.js"
         ],
-        "hash": "a11ae23a0cdd4d7f65f9",
+        "hash": "b9bfe823a26a02f1515b",
         "parents": [],
         "origins": [
           {

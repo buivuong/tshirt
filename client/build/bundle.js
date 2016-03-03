@@ -45,7 +45,7 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	/** @jsx React.DOM */var InputText = __webpack_require__(1);
-	var InputPassword = __webpack_require__(4);
+	var InputPassword = __webpack_require__(2);
 
 	var App = React.createClass({displayName: "App",
 		componentDidMount: function(){
@@ -107,9 +107,7 @@
 	})
 
 /***/ },
-/* 2 */,
-/* 3 */,
-/* 4 */
+/* 2 */
 /***/ function(module, exports) {
 
 	/** @jsx React.DOM */module.exports = React.createClass({displayName: "module.exports",
